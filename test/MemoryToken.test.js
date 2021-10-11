@@ -10,6 +10,7 @@ contract('Memory Token', (accounts) => {
   before(async () => {
     token = await MemoryToken.deployed();
   });
+
   describe('deployment', async () => {
     it('deploys successfully', async () => {
       const address = token.address;
